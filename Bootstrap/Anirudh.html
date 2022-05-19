@@ -3,56 +3,71 @@
     <head>
         <meta charset = "utf-8">
         <title>Group 6 Bootstrap Webpage</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        
+        <link rel = "stylesheet" href = "Anirudh.css">
+        <script src = "https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+   
+        <!--Popper JS-->
+        <script src = "https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+        <!--Latest Compiled JavaScript-->
+        <script src = "https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     </head>
+
     <body>
-        <h1><u><center>Group 6</center></u></h1>
+        <h1><u>Group 6</u></h1>
 
-        <nav class = "navbar navbar-inverse">
-            <div class = "container-fluid">
-                <div class = "navbar-header">
-                    <a class = "navbar-brand" href = "#">Group 6</a>
-                </div>
-
-                <ul class = "nav navbar-nav">
-                    <li><a href = "Bootstrap.html">Home</a></li>
-                    <li><a href="Jaden.html">Jaden</a></li>
-                    <li><a href="David.html">David</a></li>
-                    <li><a href="Itzetl.html">Itzetl</a></li>
-                    <li class="active"><a href="Anirudh.html">Anirudh</a></li>
-                </ul>
-            </div>
+        <nav class = "navbar navbar-expand-sm bg-dark navbar-dark">
+            <ul class = "navbar-nav">
+                <li class = "nav-item">
+                  <a class = "nav-link" href = "Bootstrap.html">Home</a>
+                </li>
+                <li class = "nav-item active">
+                  <a class = "nav-link" href = "Jaden.html">Jaden</a>
+                </li>
+                <li class = "nav-item">
+                  <a class = "nav-link" href = "David.html">David</a>
+                </li>
+                <li class = "nav-item">
+                  <a class = "nav-link" href = "itzetl.html">Itzetl</a>
+                </li>
+                <li class = "nav-item">
+                  <a class = "nav-link" href = "Anirudh.html">Anirudh</a>
+                </li>
+              </ul>
         </nav>
 
-        <div class = "container-fluid">
-            <div style = "background-color: blueviolet;" class = "jumbotron">
-                <h1><center><span style = "color:aliceblue;">Anirudh</span></center></h1>
+        <div class = "container">
+            <div class = "jumbotron">
+              <h1>Anirudh Rao</h1>
             </div>
         </div>
-
         <hr>
         <div class = "container">
-            <h2><center><span style = "color:darkslateblue;">Anirudh's Artwork</span></center></h2>
-            <button style = "background-color: darkblue; color:darkcyan;"
-                type = "button" class = "btn btn-info"
-                data-toggle = "collapse" data-target = "#2">
-                Recent Artwork by Ani:
-            </button>
-            <div id = "2" class = "collapse" style = "background-color: darkgray;">
+            <h2>Artist's Bio</h2>
+            <button type = "button" class = "btn btn-info" data-toggle = "collapse" data-target = "#bio">Read Here:</button>
+            <div id = "bio" class = "collapse" style = "color:black;">
                 <div class = "well">
-                    <div class = "row">
-                        <h3>Artwork</h3>
-                        <div>
-                            <a href = "MonkCharacter.png" title = "[D&D OC] Irrfan">Irrfan [D&D OC]</a>
-                        </div>
-                        <div>
-                        <a href = "Reducto.png" title = "Harvey Birdman: Reducto">Harvey Birdman: Reducto</a>
-                        </div>
-                        <div>
-                        <a href = "Vakama.png" title = "Bionicle: Vakama">Bionicle: Vakama</a>
-                        </div>
+                    Anirudh Rao is a student at UW Bothell. He is a freelance digital illustrator, musician, and aspiring game designer.
+                    They are the lead guitarist in the band <i>Here's 2 HOPE</i>, making their debut show at the Vera Project on May 19.
+
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class = "container">
+            <h2>Anirudh's Artwork</h2>
+                <div class = "d-flex mb-3">
+                    <div class = "text-center">
+                        <img src = "MonkCharacter.png" title = "[D&D OC] Irrfan" width = "450" height= "600" ></a>
+                    </div>
+                    <div>
+                        <img src = "Reducto.png" title = "Harvey Birdman: Reducto" width = "400" height= "600"></a>
+                    </div>
+                    <div>
+                        <img src = "Vakama.png" title = "Bionicle: Vakama" width = "450" height= "300"></a>
                     </div>
                 </div>
             </div>
